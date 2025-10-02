@@ -1,0 +1,61 @@
+*{                 /* all selector selects all the elements */
+  margin :0;       
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Gilroy';  
+}
+
+/* html, body{
+    height: 100%;
+    width: 100%;
+} */
+#outer{
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+#card{
+    height: 400px;
+    width:300px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    
+}
+#card img{
+    height: 55%;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#card h1{
+    font-size: 25px; 
+    margin: 10px 0;
+}
+#card h5{
+    font-size: 20px;
+    color: rgb(155, 35, 35);
+    margin-bottom: 20px;
+}
+#card button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: bold; /* to make the text bold */
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer; 
+}
+#card #remove{
+    background-color: #dfd9d9;
+    color: black;
+    font-size: 15px;
+}
