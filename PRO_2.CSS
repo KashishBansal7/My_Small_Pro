@@ -1,0 +1,47 @@
+*{                 /* all selector selects all the elements */
+  margin :0;       
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Gilroy';  
+}
+
+    html, body{
+    height: 100%;
+    width: 100%;
+} 
+body{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 123, 139);
+
+}
+    
+#container{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(247, 244, 250);
+    position: relative; /* to position the icon in center of div */
+    overflow: hidden; /* to hide the overflow of image */
+
+    
+    
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;   /* cover is used to cover the entire div */
+    object-position: center; /* to set the position of image */
+}
+#container i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);/* to center the icon */
+    opacity: 0; /* to hide the icon initially */
+    transition: transform 0.3s ease;
+}
